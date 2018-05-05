@@ -13,7 +13,7 @@ color: #000000;
 
 h1 {
 font-size: 2rem;
-color: #000000;
+color: #ffffff;
 }
 
 h2 {
@@ -30,7 +30,7 @@ max-width: 700px ;
 
 header, footer, footer a {
 text-align: center;
-background-color: #256970;
+background-color: #99ceff;
 width: 700px;
 height: auto;
 float: right;
