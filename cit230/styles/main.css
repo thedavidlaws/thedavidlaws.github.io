@@ -2,7 +2,7 @@
 /* You may use #HEX or color names */
 
 /* * is a wildcard referring to all elements. */
-* { margin: 700; box-sizing: border-box; }
+* { margin: 0; box-sizing: border-box; }
 
 body {
 font-size: 16px;
@@ -31,6 +31,9 @@ max-width: 700px ;
 header, footer, footer a {
 text-align: center;
 background-color: #256970;
+width: 700px;
+height: auto;
+float: right;
 color: whitesmoke;
 }
 
