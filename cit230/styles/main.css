@@ -42,7 +42,7 @@ header, footer, footer a {
 header img {
     width: 200px;
     height: auto;
-    float: center;
+    float: right;
 }
 
 footer {
