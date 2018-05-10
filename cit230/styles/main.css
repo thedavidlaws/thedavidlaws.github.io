@@ -27,7 +27,6 @@ header, main, footer {
     margin: 1.25rem auto;
     padding: .5rem;
     max-width: 700px ;
-    float: center;
 }
 
 header, footer, footer a {
@@ -35,7 +34,6 @@ header, footer, footer a {
     background-color: #99ceff;
     width: 700px;
     height: auto;
-    float: center;
     color: whitesmoke;
 }
 
