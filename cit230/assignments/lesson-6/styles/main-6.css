@@ -1,0 +1,195 @@
+/* Delete these CSS comments after reading. */
+/* This main css file contains the default rules and is geared toward the small/phone view */
+
+* { box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
+
+body {
+    font-size: 16px;
+    font-family: arial, sans-serif;  /* Declare the base font-family */
+    max-width: 900px;
+    margin: auto;
+}
+
+header, nav, main, footer { /* the comma between the selectors means apply the following CSS declarations to all of the listed elements */
+    max-width: 900px; /* Declare the maximum width and other main element rules to limit the stretch on larger/wider views */
+}
+
+header {
+    margin-top: 20px;
+    margin-bottom: -10px;
+}
+
+
+header h1 {
+    color: #323232;
+
+    font-family: 'Quando', serif;
+
+    font-size: 55px;
+
+    display:inline;
+}
+
+header h2 {
+    display: inline;
+
+    font-size: 20px;
+
+    font-style: italic;
+}
+
+header img {
+    float: left;
+
+    display: inline-flex;
+
+    max-width: 100px;
+
+    margin-top: 0px;
+
+}
+
+header .subheading {}
+nav {}
+nav button {}
+
+
+.hamburger { display: block;position: absolute;top: 2.0rem;right: 1.25rem; }
+
+.navigation { list-style: none; padding-left: 0; }
+.navigation li { display: none; }
+
+@media only screen and (min-width: 37.5em) {
+    header, nav {   margin: 0 auto; max-width: 1000px;   }
+    h1 { text-align: center; }
+    .hamburger { display: none; }
+    .navigation {   background-color: #333; overflow: hidden;   text-align: center; }
+    .navigation li { display: inline-block; }
+
+
+}
+
+
+
+
+nav ul {
+
+    background-color: #323232;
+
+    list-style-position: inside;
+
+    margin-bottom:-1px;
+
+}
+
+nav li {
+
+    display: inline-flex;
+
+    padding-right: 20px;
+
+    font-weight: bold;
+
+    text-decoration: none;
+
+    list-style: none;
+
+    text-align: center;
+
+    padding: 14px 16px;
+
+}
+
+nav a:link {
+    color: #138eaf;
+
+    text-decoration: none;}
+
+nav a:visited {
+    color: #fcd215;
+
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #fff;
+
+    text-decoration: none;
+}
+
+nav a:active {
+    color: #fffff8;
+
+    text-decoration: none;
+}
+
+main {
+    border: 2px;
+
+    border-style: solid;
+
+    border-color: #323232;
+
+    padding: 15px;
+
+}
+
+main h2 {
+
+    display: inline;
+
+}
+
+main figure { margin: 0 0 .2rem 2%; width:96%; }
+main figure img {
+    float: left;
+    display: inline-flex;
+    max-width: 400px;
+}
+
+article {
+
+    border: 2px;
+
+    border-style: solid;
+
+    border-color: #000;
+
+    border-radius: 20px;
+
+    padding: 20px;
+
+    display: inline-block;
+
+
+}
+
+article img {
+
+    float: left;
+
+
+}
+
+.town-article {
+
+
+}
+
+footer {
+    text-align: center;
+    background-color: #d2d2d2;
+    border: 2px;
+
+    border-style: solid;
+
+    border-color: #323232;
+}
+
+.footer-bar {
+    background-color: #323232;
+    color: #fff;
+    padding: 10px;
+    margin-bottom: 20px;
+
+}
