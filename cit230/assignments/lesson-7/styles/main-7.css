@@ -1,7 +1,5 @@
-/* Delete these CSS comments after reading. */
-/* This main css file contains the default rules and is geared toward the small/phone view */
 
-* { box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
+/* { box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
 
 body {
 
@@ -166,7 +164,6 @@ main {
     border: 2px solid #000;
 }
 
-
 main h2 {
 
     display: inline;
@@ -181,6 +178,13 @@ main figure img {
     display: inline-flex;
 
     max-width: -webkit-fill-available;
+}
+
+.forecast {
+
+    display: flex;
+    flex-flow: row, wrap;
+    overflow: auto;
 }
 
 article {
@@ -232,3 +236,4 @@ footer {
 
     margin-bottom: 20px;
 }
+
