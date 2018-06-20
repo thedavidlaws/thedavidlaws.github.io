@@ -1,5 +1,5 @@
 /* My hamburger menu */
 
-function hamNav() {
-    document.getElementByClassName("navigation")[0].classList.toggle("responsive");
+function toggleHam() {
+    document.getElementsByClassName("navigation")[0].classList.toggle("responsive");
 }

@@ -60,70 +60,44 @@ header h2 {
     font-style: italic;
 }
 
+.hamburger {
 
-.hamburger { display: block;position: absolute;top: 2.0rem;right: 1.25rem; }
+    display: block;
 
-.navigation { list-style: none; padding-left: 0; }
-.navigation li { display: none; }
+    position: absolute;
 
-@media only screen and (min-width: 37.5em) {
-    header, nav {   margin: 0 auto; max-width: 1000px;   }
-    h1 { text-align: center; }
-    .hamburger { display: none; }
-    .navigation {   background-color: #000; overflow: hidden;   text-align: center; }
-    .navigation li { display: inline-block; }
+    top: 2.0rem;
+
+    right: 1.25rem;
 }
 
-
-nav ul {
-
-    background-color: #323232;
-
-    list-style-position: inside;
-
-    padding: 0;
-
-    margin: auto;
-}
-
-nav li {
-
-    display: inline-flex;
-
-    padding-right: 20px;
-
-    font-weight: bold;
-
-    text-decoration: none;
+.navigation {
 
     list-style: none;
 
-    text-align: center;
+    padding-left: 0;
 
-    padding: 14px 16px;
 }
 
-nav a:link {
-    color: #138eaf;
+.navigation li { display: none; }
 
-    text-decoration: none;}
+/* Media Queries */
 
-nav a:visited {
-    color: #fcd215;
-
-    text-decoration: none;
+@media only screen and (max-width: 37.5em) {
+    .responsive { position: relative; }
+    .responsive li { background-color: #323232;	display: block; width: 100%; margin: 2px 0;	border: 1px solid #696565; }
+    .responsive li a {	padding: 1rem; text-align: center;	display: block; text-decoration:none; color: #fff;}
+    .responsive li a:hover { background-color: #696565;  }
 }
 
-nav a:hover {
-    color: #fff;
-
-    text-decoration: none;
-}
-
-nav a:active {
-    color: #fff;
-
-    text-decoration: none;
+@media only screen and (min-width: 37.5em) {
+    header,	nav {	margin: 0 auto;	max-width: 1000px;	}
+    h1 { text-align: center; }
+    .hamburger { display: none;	}
+    .navigation {	background-color: #333;	overflow: hidden;	text-align: center;	}
+    .navigation li { display: inline-block; margin-left: .25rem; }
+    .navigation a {	display: block;	color: #eee;	padding: .5rem;	text-align: center;	text-decoration: none;}
+    .navigation a:hover {	color: #000; background-color: #777;	}
 }
 
 main {
