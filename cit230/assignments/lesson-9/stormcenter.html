@@ -1,0 +1,132 @@
+
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+<meta charset="utf-8">
+<title>StormCenter | Skynote</title>
+
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<!-- Stylesheets -->
+<link href="normalize.css" type="text/css" rel="stylesheet"/>
+<link href="styles/main-9.css" type="text/css" rel="stylesheet"/>
+<link href="styles/medium-9.css" type="text/css" rel="stylesheet"/>
+<link href="styles/large-9.css" type="text/css" rel="stylesheet"/>
+
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com/css?family=Quando" rel="stylesheet">
+
+<!-- Scripts -->
+<script src="scripts/currentdate.js" type="text/javascript"></script>
+<script src="scripts/hamburger.js" type="text/javascript"></script>
+<script src="scripts/windchill.js" type="text/javascript"></script>
+<script src="scripts/rating.js" type="text/javascript"></script>
+
+</head>
+
+<body>
+
+<header>
+
+<img src="images/logo-02.jpg" alt="Skynote logo"/>
+
+<div class="subheading">
+<h1>SkyNote</h1>
+<h2>Weather Updates</h2>
+</div>
+
+<button class="hamburger" onclick="toggleHam()">&#9776;</button>
+</header>
+
+<nav>
+<ul class="navigation">
+<li><a href="index-1.html">Home</a></li>
+<li><a href="franklin-8.html">Franklin</a></li>
+<li><a href="02">Greenville</a></li>
+<li><a href="03">Springfield</a></li>
+<li><a href="stormcenter.html">Storm Center</a></li>
+<li><a href="gallery.html">Gallery</a></li>
+</ul>
+</nav>
+
+<main>
+
+<form method="post" action="thanks.html" >
+
+    <fieldset>
+        <legend> Personal Information </legend>
+
+            <label class="reQ">Full Name:<input type="text" name="fullname" placeholder="full name" pattern="[A-z\s]{5,}" required autocomplete="off"></label>
+
+            <label>Email:<input type="email" name="email" placeholder="testmail@email.com" autocomplete="off"></label>
+
+            <label class="reQ">Phone:<input type="tel" name="tPhone" required autocomplete="off"></label>
+
+            <label class="reQ">Zip Code: <input type="number" name="zCode" required autocomplete="off"></label>
+    </fieldset>
+
+    <fieldset>
+        <legend>Storm Information</legend>
+            <label>Storm Date:<input type="date"  name="sDate"></label>
+
+            <label>Storm Type:<input type="text"  name="sType" list="sList">
+                <datalist id="sList">
+                    <option value="Flash Flood"></option>
+                    <option value="Hail"></option>
+                    <option value="Hurricane"></option>
+                    <option value="Thunderstorm"></option>
+                    <option value="Tornado"></option>
+                </datalist>
+            </label>
+
+            <label>Storm Severity (from 1 to 10):
+                <input type="range" id="rating" value="5" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                <span id="ratingvalue">5</span>
+            </label>
+
+            <label>Storm Region:
+                <select name="sRegion">
+                    <option value="select" disabled selected>Select Region</option>
+                    <option value="franklin">Franklin</option>
+                    <option value="greenville">Greenville</option>
+                    <option value="springfield">Springfield</option>
+                </select>
+            </label>
+
+            <p>User In-Danger Level:</p>
+            <label><input type="radio" name="danger" value="yes">Yes</label>
+            <label><input type="radio" name="danger" value="maybe">Maybe</label>
+            <label><input type="radio" name="danger" value="no">No</label>
+
+            <label>Comments:
+                <textarea name="comments"></textarea>
+            </label>
+    </fieldset>
+
+    <input type="submit" value="Submit" class="sButton">
+
+</form>
+
+</main>
+
+<footer>
+
+<section class="contact">
+<strong>SkyNote</strong><br>
+999.999.9999<br>
+123 Main St. Anytown, US 99999<br>
+Google Map<br>
+</section>
+
+<section class="footer-bar">&copy;2018 | All Rights Reserved | SkyNote | <span id="currentdate"></span>
+</section>
+</footer>
+
+<!-- Scripts -->
+<script src="scripts/hamburger.js" type="text/javascript"></script>
+<script src="scripts/currentdate.js" type="text/javascript"></script>
+<script src="scripts/windchill.js" type="text/javascript"></script>
+<script src="scripts/rating.js" type="text/javascript"></script>
+
+</body>
+</html>
