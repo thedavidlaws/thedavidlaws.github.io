@@ -1,0 +1,339 @@
+
+/* { box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
+
+body {
+
+    font-size: 16px;
+
+    font-family: arial, sans-serif;
+
+    margin-top: 40px;
+
+    max-width: 1000px;
+
+    margin:auto;
+
+    margin-top: 40px;
+
+}
+
+h1, h2, h3 {
+    font-family: 'Quando', serif;
+
+}
+
+header, nav, main, footer {
+
+}
+
+header {
+
+    display: inline-flex;
+
+}
+
+header img {
+
+    height: 70px;
+
+    position: relative;
+
+    bottom: 12px;
+
+}
+
+
+header h1 {
+
+    color: #323232;
+
+    font-family: 'Quando', serif;
+
+    font-size: 55px;
+
+    display:inline;
+}
+
+header h2 {
+
+    display: inline;
+
+    font-size: 20px;
+
+    font-style: italic;
+}
+
+.hamburger {
+
+    display: block;
+
+    position: absolute;
+
+    top: 2.0rem;
+
+    right: 1.25rem;
+}
+
+.navigation {
+
+    list-style: none;
+
+    padding-left: 0;
+
+    margin: 0;
+
+}
+
+.navigation li { display: none; }
+
+/* Media Queries */
+
+@media only screen and (max-width: 37.5em) {
+    .responsive { position: relative; }
+    .responsive li { background-color: #323232;	display: block; width: 100%; margin: 2px 0;	border: 1px solid #696565; }
+    .responsive li a {	padding: 1rem; text-align: center;	display: block; text-decoration:none; color: #fff;}
+    .responsive li a:hover { background-color: #138eaf;  }
+}
+
+@media only screen and (min-width: 37.5em) {
+    header,	nav {	margin: 0 auto;	max-width: 1000px;	}
+    h1 { text-align: center; }
+    .hamburger { display: none;	}
+    .navigation {	background-color: #333;	overflow: hidden;	text-align: center;	}
+    .navigation li { display: inline-block; }
+    .navigation a {	display: block;	color: #eee;	padding: .9rem;	text-align: center;	text-decoration: none;}
+    .navigation a:hover {	color: #000; background-color: #138eaf;	}
+}
+
+/* Main Stuff */
+
+main {
+
+    border: 2px solid #323232;
+
+    padding: 15px;
+
+    background-color: #f5f2f2;
+}
+
+main h1 {
+
+}
+
+main figure { margin: 0 0 .2rem 2%; width:50%; }
+
+main figure img {
+
+    float: left;
+
+    display: inline-flex;
+
+    max-width: -webkit-fill-available;
+}
+
+.forecast {
+
+    display: flex;
+    flex-flow: row wrap;
+    overflow: auto;
+
+    border: 2px solid #000;
+
+    border-radius: 20px;
+
+}
+
+article {
+
+    padding: 20px;
+
+    max-width: -webkit-fill-available;
+
+    display: inline-block;
+}
+
+article img {
+
+    float: left;
+
+    max-width: inherit;
+}
+
+.town-article {
+
+    display: flex;
+    padding-left: 20px;
+    text-align: justify;
+
+}
+
+footer {
+
+    text-align: center;
+
+    background-color: #f5f2f2;
+
+    border: 2px;
+
+    border-style: solid;
+
+    border-color: #323232;
+
+    padding-bottom: 10px;
+}
+
+.contact {
+    padding: 10px;
+}
+
+.footer-bar {
+
+    background-color: #138eaf;
+
+    color: #fff;
+
+    padding: 10px;
+
+    margin-bottom: 20px;
+}
+
+/* Gallery Page */
+
+.weatherPhoto {
+
+    display: inline-grid;
+
+    grid-template-columns: 1fr 1fr 1fr;
+
+    text-align: center;
+}
+
+.weatherPhoto figure:hover {
+
+    box-shadow: 3px 3px 3px 3px;
+
+    border: 2px solid #262626;
+}
+
+.weatherPhoto figure{
+
+    margin: 10px;
+
+    padding: 2%;
+
+    padding-bottom: 10%;
+
+    border: 2px solid #000;
+
+    max-width: 1000px;
+
+    margin: auto;
+}
+
+
+/* Storm Center */
+
+legend {
+    font-family: 'Quando';
+
+    font-size: 30px;
+
+    font-weight: bold;
+}
+
+.reQ:after {
+    color: red;
+    content:"*";
+}
+
+label {
+
+    color: #323232;
+
+    display: flex;
+
+    padding: 1%;
+}
+
+.sButton {
+
+    /* Color */
+    background-color: #157890;
+
+    color: white;
+
+    /* Text */
+    text-align: center;
+
+    text-decoration: none;
+
+    font-family: 'Quando';
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    /* Other */
+    cursor: pointer;
+
+    padding: 20px 37px;
+
+    margin: 10px;
+
+    border: none;
+
+}
+/* Home Page */
+
+.towns {
+    display: flex;
+
+
+}
+
+.towns h2 {
+    color: #157890;
+
+}
+.towns h3 {
+
+}
+.towns p {
+
+}
+.towns ul {
+
+    list-style-type: square;
+
+}
+
+.towns article {
+
+    border: 2px solid #323232;
+
+    border-radius: 20px;
+}
+
+/* Other Franklin */
+
+.weather-summary {
+
+    width: 30%;
+
+    border: 2px solid #000;
+
+    border-radius: 20px;
+
+    padding: 20px;
+
+    display: inline-block;
+
+    margin-left: 25px;
+}
+
+.forecast {
+
+    padding: 20px;
+
+    display: inline-block;
+}

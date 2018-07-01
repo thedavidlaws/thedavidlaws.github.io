@@ -1,0 +1,143 @@
+
+<!DOCTYPE html>
+<html lang="en-us">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Greenville City | Skynote</title>
+
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+
+        <!-- Stylesheets -->
+        <link href="normalize.css" type="text/css" rel="stylesheet"/>
+        <link href="styles/main.css" type="text/css" rel="stylesheet"/>
+        <link href="styles/medium.css" type="text/css" rel="stylesheet"/>
+        <link href="styles/large.css" type="text/css" rel="stylesheet"/>
+
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Quando" rel="stylesheet">
+
+        <!-- Scripts are at the bottom -->
+
+    </head>
+
+    <body>
+
+        <header>
+
+            <a href="index.html"><img src="images/logo-02.jpg" alt="Skynote logo"/></a>
+
+            <div class="subheading">
+                <h1>SkyNote</h1>
+                <h2>Weather Updates</h2>
+            </div>
+
+            <button class="hamburger" onclick="toggleHam()">&#9776;</button>
+        </header>
+
+        <nav>
+            <ul class="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="franklin.html">Franklin</a></li>
+                <li><a href="greenville.html">Greenville</a></li>
+                <li><a href="springfield.html">Springfield</a></li>
+                <li><a href="stormcenter.html">Storm Center</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+
+
+        <main>
+            <h1>Welcome to Greenville, Texas</h1>
+
+            <figure class="banners">
+                <img src="images/banners/greenville-320.jpg" alt="View of sunset on main street" sizes="50vw"
+                     srcset= "images/banners/greenville-480.jpg 480w,
+                              images/banners/greenville-800.jpg 800w,
+                              images/banners/greenville-1000.jpg 1000w">
+            </figure>
+
+            <section class="weather-summary">
+
+                <h3>Weather Summary for <span id="city"></span></h3>
+                <br>
+                <p>Description: <span id="description"></span></p>
+                <p>Current Temperature: <span id="current"></span>&deg;F</p>
+                <p>High: <span id="hightemp"></span>&deg;F</p>
+                <p>Low: <span id="lowtemp"></span>&deg;F</p>
+
+                <div class="conditions">
+                    <p>Precipitation: 0%</p>
+                    <p>Windspeed: <span id="windspeed"></span></p>
+                    <p>Wind Chill: <span id="spanOutput"></span></p>
+                </div>
+            </section>
+
+
+
+            <section class="forecast">
+
+                <h3>Ten Day Forecast</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Day 1</th>
+                            <th>Day 2</th>
+                            <th>Day 3</th>
+                            <th>Day 4</th>
+                            <th>Day 5</th>
+                            <th>Day 6</th>
+                            <th>Day 7</th>
+                            <th>Day 8</th>
+                            <th>Day 9</th>
+                            <th>Day 10</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>89&deg;F</td>
+                            <td>87&deg;F</td>
+                            <td>78&deg;F</td>
+                            <td>75&deg;F</td>
+                            <td>72&deg;F</td>
+                            <td>72&deg;F</td>
+                            <td>79&deg;F</td>
+                            <td>83&deg;F</td>
+                            <td>85&deg;F</td>
+                            <td>89&deg;F</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </section>
+
+            <article>
+                <h2>Record Rainfall In Greenville</h2>
+                <img src="images/flood.jpg" alt="rain falling on water">
+                <p class="town-article">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+            </article>
+
+        </main>
+
+        <footer>
+
+            <section class="contact">
+                <strong>SkyNote</strong><br>
+                999.999.9999<br>
+                123 Main St. Anytown, US 99999<br>
+                Google Map<br>
+            </section>
+
+            <section class="footer-bar">&copy;2018 | All Rights Reserved | SkyNote | <span id="currentdate"></span>
+            </section>
+        </footer>
+
+        <!-- Scripts -->
+        <script src="scripts/hamburger.js" type="text/javascript"></script>
+        <script src="scripts/currentdate.js" type="text/javascript"></script>
+        <script src="scripts/windchill.js" type="text/javascript"></script>
+        <script src="scripts/greenville.js" type="text/javascript"></script>
+
+    </body>
+</html>
