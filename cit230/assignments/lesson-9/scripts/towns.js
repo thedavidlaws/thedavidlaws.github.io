@@ -4,13 +4,13 @@ var requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
 
 var request = new XMLHttpRequest();
 
-    request.open('GET', requestURL);
+request.open('GET', requestURL);
 
-    request.responseType = 'json';
+request.responseType = 'json';
 
-    request.send();
+request.send();
 
-    request.onload = function() {
+request.onload = function() {
 
     var skyTowns = request.response;
 
@@ -21,17 +21,20 @@ var request = new XMLHttpRequest();
 function showInfo(jsonObj) {
 
     var info = jsonObj['towns'];
+    info.splice(2,1)
 
     for (var i = 0; i < info.length; i++) {
 
-    if (i === 2) { continue; }
 
-    var myArticle = document.createElement('article');
-    var myH2 = document.createElement('h2');
-    var myPara1 = document.createElement('p');
-    var myPara2 = document.createElement('p');
-    var myPara3 = document.createElement('p');
-    var myList = document.createElement('ul');
+
+        var myArticle = document.createElement('article');
+        var myH2 = document.createElement('h2');
+        var myH3 = document.createElement('h3');
+        var myPara1 = document.createElement('p');
+        var myPara2 = document.createElement('p');
+        var myPara3 = document.createElement('p');
+        var myPara4 = document.createElement('p');
+        var myList = document.createElement('ul');
 
         myH2.textContent = info[i].name;
         myH3.textContent = 'Motto: ' + info[i].motto;
@@ -42,7 +45,7 @@ function showInfo(jsonObj) {
 
         var townEvents = info[i].events;
         for (var j = 0; j < townEvents.length; j++) {
-            if (i === 2) { continue; }
+
 
             var listItem = document.createElement('li');
             listItem.textContent = townEvents[j];

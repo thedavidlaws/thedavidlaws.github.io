@@ -1,4 +1,4 @@
-@media only screen and (min-width: 37.5em) {
+@media only screen and (min-width: 35.5em) {
 
     /* Only CSS write declarations that need to be changed. Do not duplicated declarations that are already established in the main.css */
 
@@ -32,4 +32,32 @@
     div.theGallery {
         grid-template-columns: 1fr 1fr;
     }
+    
+    
+    section.forecast {
+    
+        display: flex;
+    
+        flex-flow: column nowrap;
+        
+        text-align: center;
+    
+        padding: 20px;
+
+}
+
+    table {
+      border-collapse: collapse;
+      border: 2px solid #000;
+      }
+    
+    thead { background-color: #138eaf;
+        color:#fff;
+    }
+    td, th {
+        border: 1px solid #000;
+        padding: 0.5em;
+ 
+    }
+
 }

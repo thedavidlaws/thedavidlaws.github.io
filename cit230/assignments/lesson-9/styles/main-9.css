@@ -277,21 +277,24 @@ label {
 }
 /* Home Page */
 
-.skyTowns {
-
+.towns {
+    display: flex;
 }
 
-.skyTowns h2 {
-
+.towns h2 {
+    color: #157890;
 }
-.skyTowns h3 {
 
+.towns ul {
+
+    list-style-type: square;
 }
-.skyTowns p {
 
-}
-.skyTowns ul {
+.towns article {
 
+    border: 2px solid #323232;
+
+    border-radius: 20px;
 }
 
 /* Other Franklin */

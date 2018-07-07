@@ -86,6 +86,12 @@ header h2 {
 
 .navigation li { display: none; }
 
+li a.active {
+    background-color: #138eaf;
+    font-weight: bold;
+    color: #fff;
+    }
+
 /* Media Queries */
 
 @media only screen and (max-width: 37.5em) {
@@ -93,6 +99,7 @@ header h2 {
     .responsive li { background-color: #323232;	display: block; width: 100%; margin: 2px 0;	border: 1px solid #696565; }
     .responsive li a {	padding: 1rem; text-align: center;	display: block; text-decoration:none; color: #fff;}
     .responsive li a:hover { background-color: #138eaf;  }
+    
 }
 
 @media only screen and (min-width: 37.5em) {
@@ -131,17 +138,7 @@ main figure img {
     max-width: -webkit-fill-available;
 }
 
-.forecast {
 
-    display: flex;
-    flex-flow: row wrap;
-    overflow: auto;
-
-    border: 2px solid #000;
-
-    border-radius: 20px;
-
-}
 
 article {
 
@@ -333,7 +330,7 @@ label {
 
 .forecast {
 
-    padding: 20px;
-
-    display: inline-block;
+    display: none;
 }
+
+
