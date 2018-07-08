@@ -1,13 +1,5 @@
 @media only screen and (min-width: 35.5em) {
 
-    /* Only CSS write declarations that need to be changed. Do not duplicated declarations that are already established in the main.css */
-
-    nav button { display:none; }  /* hamburger button does not need to be shown in the medium on up views */
-
-    section.forecast { ______ }  /* show the 10-day forecast with the medium view and up */
-
-
-    /* This should be changed */
     nav button {
         display: none;}
 
@@ -27,21 +19,15 @@
         border-right: 1px solid rgba(0,0,0,0.3);
         padding: .8rem 1rem;
     }
-    /* section.forecast { ______ }   show the 10-day forecast with the medium view and up */
 
-    div.theGallery {
-        grid-template-columns: 1fr 1fr;
-    }
-    
-    
     section.forecast {
-    
+
         display: flex;
-    
+
         flex-flow: column nowrap;
-        
+
         text-align: center;
-    
+
         padding: 20px;
 
 }
@@ -50,14 +36,47 @@
       border-collapse: collapse;
       border: 2px solid #000;
       }
-    
+
     thead { background-color: #138eaf;
         color:#fff;
     }
     td, th {
         border: 1px solid #000;
         padding: 0.5em;
- 
+
+    }
+
+    .weatherPhoto {
+
+        display: inline-grid;
+
+        grid-template-columns: 1fr 1fr 1fr;
+
+        text-align: center;
+    }
+
+    .weatherPhoto figure:hover {
+
+        box-shadow: 3px 3px 3px 3px;
+
+        border: 2px solid #262626;
+    }
+
+    .weatherPhoto figure{
+
+        margin: 10px;
+
+        padding: 2%;
+
+        padding-bottom: 10%;
+
+        border: 2px solid #000;
+    }
+
+    main h2 {
+
+        display: inline;
+
     }
 
 }
