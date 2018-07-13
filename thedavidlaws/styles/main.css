@@ -150,18 +150,13 @@ main {
     max-width: 750px;
 
     margin: auto;
+
 }
 
 .grid-img figure img {
 
     max-width: 200px;
-}
 
-.grid-img figure:hover {
-
-    box-shadow: 2px 2px 2px 2px;
-
-    border: 2px solid #292929;
 }
 
 .grid-img figcaption {
