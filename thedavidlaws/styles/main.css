@@ -406,7 +406,7 @@ figure img {
 
 }
 
-figcaption {
+.gridPro figcaption {
 
     /* border */
     border: 2px solid #6b3869;
