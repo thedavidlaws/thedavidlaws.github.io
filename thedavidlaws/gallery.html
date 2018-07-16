@@ -15,6 +15,8 @@
         <link href="https://fonts.googleapis.com/css?family=Quando" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 
+        <!-- scripts are below -->
+
     </head>
 
 <body>
@@ -39,9 +41,8 @@
     </header>
 
 <main>
-    <br>
-        <h2>Gallery</h2>
-    <br>
+
+    <br><br>
 
     <!-- Slideshow container -->
     <div class="slideshow-container">
@@ -50,73 +51,62 @@
         <div class="mySlides fade">
             <div class="numbertext">1 / 12</div>
             <img src="images/gallery/leaves-01.JPG" style="width:100%">
-            <div class="text">Caption Text</div>
+            <!-- <div class="text">Caption Text</div> -->
         </div>
 
         <div class="mySlides fade">
             <div class="numbertext">2 / 12</div>
             <img src="images/gallery/tree-01.JPG" style="width:100%">
-            <div class="text">Caption Two</div>
         </div>
 
         <div class="mySlides fade">
             <div class="numbertext">3 / 12</div>
             <img src="images/gallery/train-01.JPG" style="width:100%">
-            <div class="text">Caption Three</div>
         </div>
 
         <div class="mySlides fade">
             <div class="numbertext">4 / 12</div>
             <img src="images/gallery/leaves-02.JPG" style="width:100%">
-            <div class="text">Caption Text</div>
         </div>
 
         <div class="mySlides fade">
             <div class="numbertext">5 / 12</div>
             <img src="images/gallery/tree-02.JPG" style="width:100%">
-            <div class="text">Caption Two</div>
         </div>
 
         <div class="mySlides fade">
             <div class="numbertext">6 / 12</div>
             <img src="images/gallery/train-02.JPG" style="width:100%">
-            <div class="text">Caption Three</div>
         </div>
 
         <div class="mySlides fade">
             <div class="numbertext">7 / 12</div>
             <img src="images/gallery/leaves-03.JPG" style="width:100%">
-            <div class="text">Caption Text</div>
         </div>
 
         <div class="mySlides fade">
             <div class="numbertext">8 / 12</div>
             <img src="images/gallery/tree-03.JPG" style="width:100%">
-            <div class="text">Caption Two</div>
         </div>
 
         <div class="mySlides fade">
             <div class="numbertext">9 / 12</div>
             <img src="images/gallery/train-03.JPG" style="width:100%">
-            <div class="text">Caption Three</div>
         </div>
 
         <div class="mySlides fade">
             <div class="numbertext">10 / 12</div>
             <img src="images/gallery/leaves-04.JPG" style="width:100%">
-            <div class="text">Caption Text</div>
         </div>
 
         <div class="mySlides fade">
             <div class="numbertext">11 / 12</div>
             <img src="images/gallery/tree-04.JPG" style="width:100%">
-            <div class="text">Caption Two</div>
         </div>
 
         <div class="mySlides fade">
             <div class="numbertext">12 / 12</div>
             <img src="images/gallery/train-04.JPG" style="width:100%">
-            <div class="text">Caption Three</div>
         </div>
 
         <!-- Next and previous buttons -->
@@ -144,6 +134,25 @@
 <br>
 
 
+    <section class="winter">
+        <h1>Why Do We Fall?</h1>
+
+        <i>This is an excerpt from Adam Young's blog. You can find the full article by visiting <a class="links" href="http://adamyoungofficial.tumblr.com/post/28349962697/why-must-we-fall" target="_blank">A Young Blog.</a></i>
+
+        <p>"One of my favorite stories in the world is a short chapter taken from Austrian author Felix Salten’s incredible 1923 novel Bambi, a Life in the Woods. The story of the little deer itself is quite a bit darker and melancholy than the Disney movie, but if you find inspiration in anthropomorphic literature, I highly recommend it. The tale is pure, moral, sterling and virtuous – all things I find rare and unfamiliar among 95% of modern novels on today’s shelves.<br><br>
+
+        Every year about the time the autumn leaves start falling, I dig Bambi out of my bookshelf because of a chapter concerning two introspective oak leaves entitled, Winter. It’s poignant and beautiful and I wilt and smile at the same time because Salten’s words benevolently remind me that life is fragile and even the smallest moments should be cherished dearly. I like how subjective and sobered I feel after reading the chapter. I can’t wait to read it to my son or daughter someday when he/she inquires about the subject of death (and even more excited to further explain that death isn’t the end for followers of Christ) but that’s another story."<br><br>
+
+        A brilliant radio dramatization of the chapter recorded in the late 50’s by Ted Strasser:</p>
+
+        <audio id="myaudio" controls>
+            <source src="audio/winter-bambi-excerpt.OGG" type="audio/ogg">
+            <source src="audio/winter-bambi-excerpt.mp3" type="audio/mpeg">
+        </audio>
+    </section>
+
+
+
 </main>
 
     <!-- Footer -->
@@ -154,5 +163,10 @@
 
     </footer>
     <script src="scripts/slideshow.js" type="text/javascript"></script>
+    <!-- scripts -->
+    <script>
+        var audio = document.getElementById("myaudio");
+        audio.volume = 0.5;
+    </script>
 </body>
 </html>

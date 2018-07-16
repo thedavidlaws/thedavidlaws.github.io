@@ -260,3 +260,52 @@ section{
 #daveL img {
     width: 60%;
 }
+
+.proj {
+
+    /* Text */
+
+    font-family: 'arial black', serif;
+
+    font-size: 16px;
+
+    text-decoration: none;
+
+    text-align: center;
+
+    /* Color */
+
+    color: #ffffff;
+
+    background-color: #767676;
+
+    /* Display */
+
+    position: fixed;
+
+    right: 0px;
+
+    margin-right: 60px;
+
+    padding:10px;
+
+    /* Border */
+
+    border:2px solid #767676;
+
+    border-radius: 15px;
+
+    /* Other */
+
+    cursor: pointer;
+
+    z-index: 99;
+}
+
+
+.proj:hover {
+
+    background-color: #6b3869;
+
+    border: 2px solid #6b3869;
+}
