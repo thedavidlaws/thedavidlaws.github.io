@@ -472,3 +472,43 @@ figure img {
 
 }
 
+#seeMo {
+
+    color: #6b3869;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    position: relative;
+
+    right: 0;
+
+    left: 300px;
+
+    top: 35px;
+
+    /* Other */
+    cursor: pointer;
+
+    padding: 10px 25px;
+
+    margin: 10px;
+
+    border: solid 2px;
+
+    border-radius: 10px;
+}
+
+#seeMo:hover {
+
+    border: solid 2px;
+
+    border-radius: 10px;
+
+    background-color: #6b3869;
+
+    color: #fff;
+
+}
+
