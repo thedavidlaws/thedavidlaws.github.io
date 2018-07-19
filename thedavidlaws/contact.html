@@ -1,28 +1,30 @@
-
-
 <!DOCTYPE html>
 <html lang="en-us">
 
 <head>
-    <meta charset="utf-8">
-    <title>Contact | David Laws</title>
+    <title>David Laws - Contact Me</title>
 
+<!-- Meta -->
+
+    <meta charset="utf-8">
+    <meta name="author" content="David Laws">
+    <meta name="description" content="David Laws Contact Page">
     <meta name="viewport" content="width=device-width,initial-scale=1">
 
-    <!-- Stylesheets -->
+<!-- Stylesheets -->
+
     <link href="normalize.css" type="text/css" rel="stylesheet"/>
     <link href="styles/main.css" type="text/css" rel="stylesheet"/>
 
+<!-- Fonts -->
 
-    <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Quando" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-
 </head>
 
 <body>
 
-    <!-- Header -->
+<!-- Header -->
     <header>
         <a id="logo" href="index-final.html"><img src="images/logo-09-01.png" alt="David Laws logo"/></a>
 
@@ -30,7 +32,7 @@
             <ul class="navigation">
                 <li><a href="index-final.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a class="active" href="contact.html">Contact</a></li>
                 <li><a href="gallery.html">Gallery</a></li>
                 <li><a href="projects.html">Projects</a></li>
             </ul>
@@ -39,29 +41,27 @@
         <div class="slideshow">
             <img src="images/header-smaller.JPG" alt="header collage of leaves and keychains"/>
         </div>
-
     </header>
 
-    <!-- Main -->
-    <main>
+<!-- Main -->
 
+    <main>
         <form method="post" action="thanks.html">
 
-    <fieldset>
-        <legend> Personal Information </legend>
+        <fieldset>
+            <legend> Personal Information </legend>
 
-        <label class="reQ">Full Name:<input class="contact" type="text" name="fullname" placeholder="full name" pattern="[A-z\s]{5,}" required autocomplete="off"></label>
+            <label class="reQ">Full Name:<input class="contact" type="text" name="fullname" placeholder="full name" pattern="[A-z\s]{5,}" required autocomplete="off"></label>
 
-        <label class="reQ">Email: <input class="contact" type="email" name="email" placeholder="testmail@email.com" required autocomplete="off"></label>
+            <label class="reQ">Email: <input class="contact" type="email" name="email" placeholder="testmail@email.com" required autocomplete="off"></label>
 
-        <label>Phone: <input class="contact" type="tel" name="tPhone" autocomplete="off"></label>
+            <label>Phone: <input class="contact" type="tel" name="tPhone" autocomplete="off"></label>
+        </fieldset>
 
-    </fieldset>
+        <fieldset>
+            <legend>Suggestions</legend>
 
-    <fieldset>
-        <legend>Suggestions</legend>
-
-        <label>Reason for contact:
+            <label>Reason for contact:
                 <select class="contact" name="sReason">
                     <option value="select" disabled selected>Select</option>
                     <option value="photography">Photography</option>
@@ -69,21 +69,27 @@
                 </select>
             </label>
 
-        <label>Comments: <textarea class="contact" name="comment" rows="4" cols="50"></textarea></label>
+            <label>Comments: <textarea class="contact" name="comment" rows="4" cols="50"></textarea></label>
+        </fieldset>
 
-    </fieldset>
+        <input type="submit" value="Submit" class="sButton">
 
-    <input type="submit" value="Submit" class="sButton">
-
-</form>
+        </form>
     </main>
 
-    <!-- Footer -->
+<!-- Footer -->
+
     <footer>
+        <section class="footer-bar">
 
-
-        <section class="footer-bar">&copy;2018 | All Rights Reserved | David Laws <span id="currentdate"></span>
+            <ul class="navTwo">
+                <li><a href="about.html">About</a></li>
+                <li><a href="styleguide.html">Style Guide</a></li>
+                <li><a href="http://thedavidlaws.com/comm310-website/practice/index.html">Practice</a></li>
+            </ul>
         </section>
+
+        <p>Copyright &copy; 2018 | David Laws | All Rights Reserved</p>
 
     </footer>
 
