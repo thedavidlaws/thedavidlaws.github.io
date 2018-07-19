@@ -79,6 +79,12 @@ li a.activeLink {
 
 }
 
+.activeLink{
+    
+    background-color: #6b3869;
+    
+}
+
 .navigation {
 
     list-style: none;
