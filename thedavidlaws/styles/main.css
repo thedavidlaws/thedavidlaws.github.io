@@ -21,6 +21,7 @@ header, main, footer {
     max-width: 1500px;
 
     margin: auto;
+
 }
 
 header {
@@ -49,7 +50,7 @@ header {
 
 header h1 {
 
-    color: #323232;
+    color: #292929;
 
     font-family: 'Quando', serif;
 
@@ -71,7 +72,7 @@ nav {
 
 li a.activeLink {
 
-    background-color: #6b3869;
+    background-color: #586732;
 
     font-weight: bold;
 
@@ -109,7 +110,7 @@ li a.activeLink {
 
 .navigation a:hover {
 
-    background-color: #6C376A;
+    background-color: #586732;
 
     color: #fff;
 
@@ -154,13 +155,13 @@ main {
 
 }
 
-.grid-img figure{
+figure{
 
     margin: 10px;
 
     padding: 8px;
 
-    /* border: 2px solid #000; */
+    /* border: 2px solid #292929; */
 
     max-width: 750px;
 
@@ -168,17 +169,34 @@ main {
 
 }
 
-.grid-img figure img {
+figure img {
 
     max-width: 200px;
 
 }
 
-.grid-img figcaption {
+figcaption {
 
-    flex-flow: wrap;
+    /* border */
+    border: 2px solid #d86d26;
+    border-radius: 15px;
 
-    max-width: 200px;
+    /* text */
+    font-family: 'quando', serif;
+    font-size: 18px;
+    font-weight: bold;
+
+    /* color */
+    background-color: #d86d26;
+    color: #fff;
+
+    /* other */
+    padding: 5px;
+}
+
+figure img {
+
+    margin-bottom: 10px;
 
 }
 
@@ -188,11 +206,11 @@ footer {
 
     text-align: center;
 
-    color: #020100;
+    color: #292929;
 
-    background-color: #6C376A;
+    background-color: #586732;
 
-    /* border: 2px solid #323232; */
+    /* border: 2px solid #292929; */
 
     padding-top: 2px;
 
@@ -231,7 +249,7 @@ footer {
 
     display: block;
 
-    color: #eee;
+    color: #fff;
 
     padding: .4rem;
 
@@ -242,9 +260,9 @@ footer {
 
 .navTwo a:hover {
 
-    color: #6b3869;
+    color: #586732;
 
-    background-color: #f5f5f5;
+    background-color: #fff;
 
     border-radius: 10px;
 
@@ -252,7 +270,6 @@ footer {
 
 
 /* Contact Page */
-
 
 legend {
     font-family: 'Quando';
@@ -263,32 +280,52 @@ legend {
 }
 
 .reQ:after {
-    color: red;
+    color: #d86d26;
     content:"*";
+}
+
+fieldset {
+
+    display: inline-block;
+
+    margin: auto;
 }
 
 label {
 
-    color: #323232;
+    color: #292929;
 
-    display: flex;
-
-    padding: 1%;
+    display: block;
 }
+
+.contact {
+
+    font-size: 20px;
+
+    width: 695px;
+
+    padding: 5px;
+
+    border: solid 1px #848888;
+
+    border-radius: 8px;
+
+    margin: 10px;
+
+}
+
 
 .sButton {
 
     /* Color */
-    background-color: #6C376A;
+    background-color: #ffffff;
 
-    color: white;
+    color: #d86d26;
 
     /* Text */
     text-align: center;
 
     text-decoration: none;
-
-    font-family: 'Quando';
 
     font-size: 16px;
 
@@ -297,38 +334,27 @@ label {
     /* Other */
     cursor: pointer;
 
-    padding: 15px 30px;
+    padding: 10px 25px;
 
     margin: 10px;
 
-    border: solid 2px;
+    border: solid 3px #d86d26;
 
     border-radius: 10px;
+
+    display: block;
 
 }
 
 .sButton:hover {
 
-    background-color: #983e95;
+    background-color: #d86d26;
+
+    color: #fff;
 
 }
 
 /* About Me Section*/
-
-.intro{
-
-    display: inline;
-}
-
-.intro a {
-
-    text-decoration: none;
-
-    font-weight: bold;
-
-    color: #ca2565;
-
-}
 
 #mypic {
 
@@ -453,32 +479,7 @@ label {
 
     font-weight: bold;
 
-    color: #ca2565;
-}
-
-figure img {
-
-    margin-bottom: 10px;
-
-}
-
-.gridPro figcaption {
-
-    /* border */
-    border: 2px solid #6b3869;
-    border-radius: 15px;
-
-    /* text */
-    font-family: 'quando', serif;
-    font-size: 18px;
-    font-weight: bold;
-
-    /* color */
-    background-color: #6b3869;
-    color: #fff;
-
-    /* other */
-    padding: 5px;
+    color: #ca251a;
 }
 
 .downloads {
@@ -488,49 +489,9 @@ figure img {
     margin-top: 40px;
 }
 
-.gridPro {
-
-    display: flex;
-
-    flex-flow: row wrap;
-
-    grid-template-columns: 10px;
-
-    text-align: center;
-
-}
-
-.gridPro figure{
-
-    margin: 10px;
-
-    padding: 8px;
-
-    /* border: 2px solid #000; */
-
-    max-width: 750px;
-
-    margin: auto;
-
-}
-
-.gridPro figure img {
-
-    max-width: 200px;
-
-}
-
-.gridPro figcaption {
-
-    flex-flow: wrap;
-
-    max-width: 200px;
-
-}
-
 #seeMo {
 
-    color: #6b3869;
+    color: #d86d26;
 
     text-decoration: none;
 
@@ -562,7 +523,21 @@ figure img {
 
     border-radius: 10px;
 
-    background-color: #6b3869;
+    background-color: #d86d26;
 
     color: #fff;
+}
+
+fieldset {
+
+    margin: 10px;
+
+    border: solid #292929 2px;
+
+    border-radius: 8px;
+}
+
+.figlink {
+
+    text-decoration: none;
 }

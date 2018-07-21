@@ -57,19 +57,19 @@
         <section>
             <h2 class="styleguide">Branding</h2>
             <h3 class="styleguide">Website Logo</h3>
-            <img src="images/logo-07-smaller.jpg" alt="David Laws Logo image"/>
+            <img id="logo" src="images/logo-09-01.png" alt="David Laws Logo image"/>
             <h3 class="styleguide">Color Palette</h3>
             <p class="styleguide">These color are complementary and give a calming feeling. I think they will work well with nature photography.</p>
             <div id="color1" class="colorgroup">
-                <h4 class="styleguide">Leaf Green</h4>
-                <p class="styleguide">#7FA845<br/>
-                127, 168, 69</p>
+                <h4 class="styleguide">Forest Green</h4>
+                <p class="styleguide">#586732<br/>
+                35, 40, 20</p>
                 <div class="swatches" id="swatch1"></div>
             </div>
             <div id="color2" class="colorgroup">
-                <h4 class="styleguide">Pale Green</h4>
-                <p class="styleguide">#D9F4BE<br/>
-                217, 244, 190</p>
+                <h4 class="styleguide">Orange</h4>
+                <p class="styleguide">#d86d26<br/>
+                85, 43, 15</p>
                 <div class="swatches" id="swatch2"></div>
             </div>
             <div id="color3" class="colorgroup">
@@ -79,9 +79,9 @@
                 <div class="swatches" id="swatch3"></div>
             </div>
             <div id="color4" class="colorgroup">
-                <h4 class="styleguide">Dark Fuchsia</h4>
-                <p class="styleguide">#6C376A<br/>
-                108, 55, 106</p>
+                <h4 class="styleguide">Gray</h4>
+                <p class="styleguide">#848888<br/>
+                52, 53, 53</p>
                 <div class="swatches" id="swatch4"></div>
             </div>
             <div class="clear"></div>
@@ -91,7 +91,7 @@
 
         <section>
             <h2 class="styleguide">Typography</h2>
-            <p class="styleguide">I have chosen <b>Quando</b> as my heading font, and either <b>Alegreya Sans</b> or <b>Montserrat.</b> Personally I like the contrast between a serif heading and sans serif body, especially because sans serif fonts are easier to read at a smaller size. </p>
+            <p class="styleguide">I have chosen <b>Quando</b> as my heading font, and <b>Montserrat</b> as the body copy.<br><br> Personally I like the contrast between a serif heading and sans serif body, especially because sans serif fonts are easier to read at a smaller size. </p>
             <h3 class="styleguide">Heading Font</h3>
             <h4>ABCDEFGHIJKLMNOPQRSTUVWXYZ<br/>
             abcdefghijklmnopqrstuvwxyz<br/>
@@ -111,25 +111,29 @@
         <section>
             <h2 class="styleguide">Navigation</h2>
             <h3 class="styleguide">Main Navigation</h3>
-            <nav id="mainnav">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About 2</a></li>
-                    <li><a href="#">Contact</a></li>
-                    <li><a href="#">Media</a></li>
-                    <li><a href="#">Projects</a></li>
+            <nav>
+                <ul class="navigation">
+                    <li><a class="activeLink" href="index-final.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="projects.html">Projects</a></li>
                 </ul>
             </nav>
             <h3 class="styleguide">Secondary Navigation</h3>
-            <nav id="secondnav">
-                <ul>
-                    <li><a href="#">Photos (in Media)</a></li>
-                    <li><a href="#">Drawings (in Media)</a></li>
-                    <li><a href="#">Practice (in Projects)</a></li>
-                    <li><a href="#">Style Guide (in Projects</a></li>
-                </ul>
-            </nav>
-        </section>
+            <footer>
+                <section class="footer-bar">
+
+                    <ul class="navTwo">
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="styleguide.html">Style Guide</a></li>
+                        <li><a href="http://thedavidlaws.com/comm310-website/practice/index.html">Practice</a></li>
+                    </ul>
+                </section>
+
+                <p>Copyright &copy; 2018 | David Laws | All Rights Reserved</p>
+
+            </footer>
 
 <!-- HTML Elements Section -->
 
@@ -157,7 +161,7 @@
             </ol>
 
             <h3 class="styleguide">Links</h3>
-            <a href="#">Link style 1</a><br/>
+            <a class="links" href="#">Link style 1</a><br/>
             <a href="#" class="linkstyle2">Link style 2</a>
 
             <h3 class="styleguide">Paragraphs</h3>
@@ -165,10 +169,13 @@
             <p>Ant aliquias alis es ma proribus. Solest, officiendic tem eatibeatium re voluptas es diae eate a eostrume nis il erum facit et ex est, ipsae cum simodi tet quos ma volupta aut latur, et quamus nobis netur seritius excero voloratuscia essequaspis sequo cus, everum nissit et fugiaeperor acepedit quatiam et eum volo dicaeribus dest lab illiqua temporrum, que quam que perovidus, voluptatur, officto doluptata nempore icipsapid eatas es eum quiaspis earum que offic tem fugita voluptatinis quis as audigen derferf erition sectasitia solupta nam net quatur andis del ium re enihit aut apelist et es milit quaes ulles expliquunt volorum eictium quia iur, nis dit asped estiatem. </p>
 
             <h3 class="styleguide">Figure & Figcaption</h3>
-            <figure>
-                <img src="images/P7210201.JPG" alt="Figure image" />
-                <figcaption>This is the figcaption</figcaption>
-            </figure>
+            <div class="grid-img">
+
+                <figure>
+                    <a href="https://www.facebook.com/thedavidlaws" target="_blank"><img src="images/facebook.JPG" alt="rounded screenshot of David's facebook profile"></a>
+                    <a class="figlink" href="https://www.facebook.com/thedavidlaws" target="_blank"><figcaption>Facebook</figcaption></a>
+                </figure>
+            </div>
         </section>
 
 <!-- References Section -->

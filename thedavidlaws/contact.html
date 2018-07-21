@@ -49,30 +49,20 @@
         <form method="post" action="thanks.html">
 
         <fieldset>
-            <legend> Personal Information </legend>
+            <legend> Contact </legend>
 
-            <label class="reQ">Full Name:<input class="contact" type="text" name="fullname" placeholder="full name" pattern="[A-z\s]{5,}" required autocomplete="off"></label>
+            <label class="reQ">Name:</label>
+            <input class="contact" type="text" name="fullname" placeholder="full name" pattern="[A-z\s]{5,}" required autocomplete="off">
 
-            <label class="reQ">Email: <input class="contact" type="email" name="email" placeholder="testmail@email.com" required autocomplete="off"></label>
+            <label class="reQ">Email:</label>
+            <input class="contact" type="email" name="email" placeholder="testmail@email.com" required autocomplete="off">
 
-            <label>Phone: <input class="contact" type="tel" name="tPhone" autocomplete="off"></label>
+            <label>Comments:</label>
+            <textarea class="contact" name="comment" rows="4" cols="50"></textarea>
+
+            <input type="submit" value="Submit" class="sButton">
+
         </fieldset>
-
-        <fieldset>
-            <legend>Suggestions</legend>
-
-            <label>Reason for contact:
-                <select class="contact" name="sReason">
-                    <option value="select" disabled selected>Select</option>
-                    <option value="photography">Photography</option>
-                    <option value="other">Other</option>
-                </select>
-            </label>
-
-            <label>Comments: <textarea class="contact" name="comment" rows="4" cols="50"></textarea></label>
-        </fieldset>
-
-        <input type="submit" value="Submit" class="sButton">
 
         </form>
     </main>

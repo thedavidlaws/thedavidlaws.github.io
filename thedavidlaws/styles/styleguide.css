@@ -3,16 +3,16 @@
 /* --------------------------------------------- */
 /* These are the colors of the boxes under the Branding section */
 #swatch1{
-    background-color: #7FA845;
+    background-color: #586732;
 }
 #swatch2{
-    background-color: #D9F4BE;
+    background-color: #d86d26;
 }
 #swatch3{
     background-color: #292929;
 }
 #swatch4{
-    background-color: #6C376A;
+    background-color: #848888;
 }
 
 /* ----------------------------------------------------- */
@@ -35,55 +35,107 @@ h1,h2,h3,h4,h5,h6{
 /* Colors, style, floating, shapes, etc of main & secondary navs */
 
 /* Main Navigation Style */
-#mainnav{
+nav {
+
+    position: relative;
+    width: 105px;
+    margin: 0;
+    padding: 5px;
+}
+
+li a.activeLink {
+
+    background-color: #586732;
+
+    font-weight: bold;
+
+    color: #fff;
 
 }
-#mainnav ul{
-    background-color: #292929;	overflow: hidden;	text-align: center;
+
+.navigation {
+
+    list-style: none;
+
+    padding-left: 0;
+
+    background-color: #292929;
+
+    text-align: left;
+
+    width: 105px;
 
 }
-#mainnav li{
-    display: inline-block; margin-left: .25rem;
+
+.navigation a {
+
+    display: block;
+
+    color: #eee;
+
+    padding: .8rem;
+
+    text-decoration: none;
+
+    padding-left: .5em;
+
 }
-#mainnav a:link{
-    display: block;	color: #eee;	padding: .5rem;	text-align: center;	text-decoration: none;
+
+.navigation a:hover {
+
+    background-color: #586732;
+
+    color: #fff;
+
 }
-#mainnav a:visited{
-    color: #6C376A;
-    /* other styles */
-}
-#mainnav a:hover{
-    color: #000; background-color: #777;
-}
-#mainnav a:active{
-    display: block;	color: #eee;	padding: .5rem;	text-align: center;	text-decoration: none;
-}
+
 
 
 /* Secondary Navigation Style */
-#secondnav{
+footer {
+
+    text-align: center;
+    color: #292929;
+    background-color: #586732;
+    padding-top: 2px;
+    padding-bottom: 20px;
 
 }
-#secondnav ul{
-    background-color: #292929;	overflow: hidden;	text-align: center;
+
+.footer-bar {
+    color: #fff;
+    padding
 }
-#secondnav li{
-    display: inline-block; margin-left: .25rem;
+
+
+.navTwo {
+
+    text-align: center;
+    font-weight: bold;
+    padding-left: 0;
 }
-#secondnav a:link{
-    display: block;	color: #eee;	padding: .5rem;	text-align: center;	text-decoration: none;
+
+.navTwo li {
+
+    display: inline-block;
 }
-#secondnav a:visited{
-    color: #6C376A;
-    /* other styles */
+
+.navTwo a {
+
+    display: block;
+    color: #fff;
+    padding: .4rem;
+    text-align: center;
+    text-decoration: none;
 }
-#maisecondnavnnav a:hover{
-    color: #;
-    color: #000; background-color: #777;
+
+.navTwo a:hover {
+
+    color: #586732;
+    background-color: #fff;
+    border-radius: 10px;
 }
-#secondnav a:active{
-    display: block;	color: #eee;	padding: .5rem;	text-align: center;	text-decoration: none;
-}
+
 
 
 
@@ -101,6 +153,7 @@ h1, h2, h3 ,h4, h5, h6{
 
 /* Style for individual headings */
 h1{
+
 
 }
 
@@ -145,6 +198,11 @@ ol li{
 /* This is for all default links on your page */
 a:link{
 
+        text-decoration: none;
+
+        font-weight: bold;
+
+        color: #ca251a;
 }
 a:visited{
 
@@ -159,11 +217,26 @@ a:active{
 /* This is for secondary link styles (possibly in your footer, etc) */
 .linkstyle2 a:link{
 
+    display: block;
+
+    color: #fff;
+
+    padding: .4rem;
+
+    text-align: center;
+
+    text-decoration: none;
 }
 .linkstyle2 a:visited{
 
 }
 .linkstyle2 a:hover{
+
+        color: #586732;
+
+        background-color: #fff;
+
+        border-radius: 10px;
 
 }
 .linkstyle2 a:active{
@@ -179,18 +252,66 @@ p{
 
 
 /* Figure and Figcaption Styles */
+
+.grid-img {
+
+    display: flex;
+
+    flex-flow: row wrap;
+
+    grid-template-columns: 10px;
+
+    text-align: center;
+
+}
+
 figure{
 
+    margin: 10px;
+
+    padding: 8px;
+
+    /* border: 2px solid #292929; */
+
+    max-width: 750px;
+
+    margin: auto;
+
 }
-figure img{
-    width: 50%;
-    border-radius: 0 90px;
+
+figure img {
+
+    max-width: 200px;
+
+}
+
+figcaption {
+
+    /* border */
+    border: 2px solid #d86d26;
+    border-radius: 15px;
+
+    /* text */
+    font-family: 'quando', serif;
+    font-size: 18px;
+    font-weight: bold;
+
+    /* color */
+    background-color: #d86d26;
+    color: #fff;
+
+    /* other */
     padding: 5px;
-    border: solid 5px #292929;
+}
+
+figure img {
+
+    margin-bottom: 10px;
 
 }
-figcaption{
+.figlink {
 
+    text-decoration: none;
 }
 
 
@@ -223,7 +344,7 @@ h1.styleguide, h2.styleguide, h3.styleguide, h4.styleguide, h5.styleguide, h6.st
     font-family: "Courier New", Courier, monospace;
 }
 h2.styleguide{
-    background-color: #777;
+    background-color: #586732;
     border-radius: 15px;
     padding: 15px;
     margin-left: -15px;
@@ -275,9 +396,9 @@ section{
 
     /* Color */
 
-    color: #ffffff;
+    color: #d86d26;
 
-    background-color: #767676;
+    background-color: #fff;
 
     /* Display */
 
@@ -291,7 +412,7 @@ section{
 
     /* Border */
 
-    border:2px solid #767676;
+    border:2px solid #d86d26;
 
     border-radius: 15px;
 
@@ -305,7 +426,14 @@ section{
 
 .proj:hover {
 
-    background-color: #6b3869;
+    background-color: #d86d26;
 
-    border: 2px solid #6b3869;
+    border: 2px solid #d86d26;
+
+    color: #fff;
+}
+
+#logo {
+
+    height: 100px;
 }
