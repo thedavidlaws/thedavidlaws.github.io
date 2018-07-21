@@ -1,45 +1,35 @@
 body {
 
+    /* text */
     font-size: 16px;
-
     font-family: montserrat, sans-serif;
 
+    /* display */
     max-width: 750px;
-
     margin: auto;
-
 }
 
 h1, h2, h3 {
 
     font-family: 'Quando', serif;
-
 }
 
 header, main, footer {
 
     max-width: 1500px;
-
     margin: auto;
-
 }
 
 header {
 
     display: flex;
-
     margin-top: 70px;
-
-    /*border: 2px solid #292929;*/
-
 }
 
 #logo img {
 
     height: 100px;
-
     margin-right: 15px;
-
 }
 
 #logo a:hover {
@@ -51,9 +41,7 @@ header {
 header h1 {
 
     color: #292929;
-
     font-family: 'Quando', serif;
-
     font-size: 20px;
 }
 
@@ -67,70 +55,50 @@ nav {
     width: 105px;
     margin: 0;
     padding: 5px;
-
 }
 
 li a.activeLink {
 
     background-color: #586732;
-
     font-weight: bold;
-
     color: #fff;
-
 }
 
 .activeLink{
-    
+
     background-color: #6b3869;
-    
 }
 
 .navigation {
 
     list-style: none;
-
     padding-left: 0;
-
     background-color: #292929;
-
     text-align: left;
-
     width: 105px;
-
 }
 
 .navigation a {
 
     display: block;
-
     color: #eee;
-
     padding: .8rem;
-
     text-decoration: none;
-
     padding-left: .5em;
-
 }
 
 .navigation a:hover {
 
     background-color: #586732;
-
     color: #fff;
-
 }
 
 /* Banner Image */
 .slideshow img {
 
     height: 342px;
-
     position: relative;
-
     right: 97px;
-
 }
 
 
@@ -138,47 +106,65 @@ li a.activeLink {
 
 main {
 
-    /* border: 2px solid #292929; */
-
     padding-top: 25px;
-
     text-align: justify;
-
     margin-bottom: 100px;
 }
 
-/* Images */
+.links{
+    text-decoration: none;
+    font-weight: bold;
+    color: #ca251a;
+}
+
+#seeMo {
+    /* Text */
+    color: #d86d26;
+    text-decoration: none;
+    font-weight: bold;
+
+    /* Display */
+    position: relative;
+    right: 0;
+    left: 300px;
+    top: 35px;
+
+    /* Other */
+    cursor: pointer;
+    padding: 10px 25px;
+    margin: 10px;
+    border: solid 2px;
+    border-radius: 10px;
+}
+
+#seeMo:hover {
+    border: solid 2px;
+    border-radius: 10px;
+    background-color: #d86d26;
+    color: #fff;
+}
+
+/* Figures */
 
 .grid-img {
 
     display: flex;
-
     flex-flow: row wrap;
-
     grid-template-columns: 10px;
-
     text-align: center;
-
 }
 
 figure{
 
     margin: 10px;
-
     padding: 8px;
-
-    /* border: 2px solid #292929; */
-
     max-width: 750px;
-
     margin: auto;
-
 }
 
 figure img {
 
     max-width: 200px;
-
 }
 
 figcaption {
@@ -203,7 +189,11 @@ figcaption {
 figure img {
 
     margin-bottom: 10px;
+}
 
+.figlink {
+    text-decoration: none;
+    color: #fff;
 }
 
 /* Footer */
@@ -211,39 +201,23 @@ figure img {
 footer {
 
     text-align: center;
-
     color: #292929;
-
     background-color: #586732;
-
-    /* border: 2px solid #292929; */
-
     padding-top: 2px;
-
     padding-bottom: 20px;
-
 }
 
 .footer-bar {
 
-    /* background-color: #4e2c4d; */
-
     color: #fff;
-
-    padding
-
-
 }
 
 
 .navTwo {
 
     text-align: center;
-
     font-weight: bold;
-
     padding-left: 0;
-
 }
 
 .navTwo li {
@@ -254,24 +228,17 @@ footer {
 .navTwo a {
 
     display: block;
-
     color: #fff;
-
     padding: .4rem;
-
     text-align: center;
-
     text-decoration: none;
 }
 
 .navTwo a:hover {
 
     color: #586732;
-
     background-color: #fff;
-
     border-radius: 10px;
-
 }
 
 
@@ -279,9 +246,7 @@ footer {
 
 legend {
     font-family: 'Quando';
-
     font-size: 30px;
-
     font-weight: bold;
 }
 
@@ -293,71 +258,56 @@ legend {
 fieldset {
 
     display: inline-block;
-
     margin: auto;
 }
 
 label {
 
     color: #292929;
-
     display: block;
 }
 
 .contact {
 
     font-size: 20px;
-
     width: 695px;
-
     padding: 5px;
-
     border: solid 1px #848888;
-
     border-radius: 8px;
-
     margin: 10px;
-
 }
 
+fieldset {
+    margin: 10px;
+    border: solid #292929 2px;
+    border-radius: 8px;
+}
 
 .sButton {
 
     /* Color */
     background-color: #ffffff;
-
     color: #d86d26;
 
     /* Text */
     text-align: center;
-
     text-decoration: none;
-
     font-size: 16px;
-
     font-weight: bold;
 
     /* Other */
     cursor: pointer;
-
     padding: 10px 25px;
-
     margin: 10px;
-
     border: solid 3px #d86d26;
-
     border-radius: 10px;
-
     display: block;
-
 }
 
 .sButton:hover {
 
     background-color: #d86d26;
-
     color: #fff;
-
 }
 
 /* About Me Section*/
@@ -365,9 +315,7 @@ label {
 #mypic {
 
     float: left;
-
     max-width: 40%;
-
     padding-right: 20px;
 }
 
@@ -375,8 +323,8 @@ label {
     margin-left: .5em;
 }
 
-/* SKIP */
 
+/* Gallery */
 * {box-sizing:border-box}
 
 /* Slideshow container */
@@ -472,6 +420,7 @@ label {
     to {opacity: 1}
 }
 
+/* Section on gallery page*/
 .winter i{
     font-family: 'quando', serif;
     text-align: center;
@@ -479,71 +428,10 @@ label {
     font-size: 14px;
 }
 
-.links{
-
-    text-decoration: none;
-
-    font-weight: bold;
-
-    color: #ca251a;
-}
-
+/* Section on projects page*/
 .downloads {
-
     text-align: justify;
-
     margin-top: 40px;
 }
 
-#seeMo {
 
-    color: #d86d26;
-
-    text-decoration: none;
-
-    font-weight: bold;
-
-    position: relative;
-
-    right: 0;
-
-    left: 300px;
-
-    top: 35px;
-
-    /* Other */
-    cursor: pointer;
-
-    padding: 10px 25px;
-
-    margin: 10px;
-
-    border: solid 2px;
-
-    border-radius: 10px;
-}
-
-#seeMo:hover {
-
-    border: solid 2px;
-
-    border-radius: 10px;
-
-    background-color: #d86d26;
-
-    color: #fff;
-}
-
-fieldset {
-
-    margin: 10px;
-
-    border: solid #292929 2px;
-
-    border-radius: 8px;
-}
-
-.figlink {
-
-    text-decoration: none;
-}
