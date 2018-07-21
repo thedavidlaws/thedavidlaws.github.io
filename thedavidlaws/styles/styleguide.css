@@ -427,3 +427,8 @@ section{
 
     height: 100px;
 }
+
+.shrink {
+
+    width: 70%;
+}
