@@ -86,7 +86,7 @@ li a.active {
 
 @media only screen and (max-width: 30.5em) {
     .responsive { position: relative; }
-    .responsive li { background-color: #5a5a5a;	display: block; width: 0%; margin: 0;	border: 1px solid #5a5a5a; }
+    .responsive li { background-color: #5a5a5a;	display: block; width: 100%; margin: 0;	border: 1px solid #5a5a5a; }
     .responsive li a {	padding: 1rem; text-align: center;	display: block; text-decoration:none; color: #fff;}
     .responsive li a:hover { background-color: #ea762c;  }
 }
